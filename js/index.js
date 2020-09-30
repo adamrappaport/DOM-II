@@ -5,6 +5,10 @@ busImg.addEventListener('mouseover', function(event){
     busImg.style.width = '50%';
 })
 
+busImg.addEventListener('mouseover', function(event){
+    busImg.style.width = '50%';
+})
+
 busImg.addEventListener('mouseleave', function(event){
     busImg.style.width = '100%';
 })
@@ -47,3 +51,27 @@ window.addEventListener('load', function(event){
     alert("Hello World")
     console.log('Hello World')
 });
+
+window.addEventListener("resize", function (event) {
+    console.log('The resize force is with you');
+  });
+
+
+  const body = document.querySelector('body');
+
+  document.addEventListener('keyup',(event)=>{
+    body.style.backgroundColor = "grey"
+  })
+
+  document.addEventListener('keydown',(event)=>{
+    body.style.backgroundColor = "white"
+  })
+
+
+//   const buttons = document.querySelectorAll('.btn');
+// buttons.forEach((button, idx) => {
+//     button.addEventListener('click', (event) => {
+//         button.style.color = 'green';
+//         event.stopPropagation();
+//     })
+// })
